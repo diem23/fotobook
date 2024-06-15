@@ -1,0 +1,18 @@
+@import url(../style.css);
+@import url(../constant.css);
+.container-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-content .login-form{
+    margin-top: 120px;
+    width: 346px;
+    height: 456px;
+}
+.container-content .login-box{
+    background-color: var(--login-bgc);
+}
+#InputPassword{
+    margin-top: -1px;
+}

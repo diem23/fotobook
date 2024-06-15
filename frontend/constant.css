@@ -1,0 +1,20 @@
+:root{
+    /* COLOR THEME*/
+    --main-color: #3C5999;
+    --normal-text-color:  #4F4F4F;
+    --search-plachodler-text: #B8B8B8;
+    --border-color: #BDBDBD;    
+    --btn-color: #219653;
+    --addPhoto-bgc: #F2F2F2;
+    --login-bgc: #F9F9F9;
+    --alert-bgc:#EB5757;
+    /*FONT-SIZE THEME*/
+    --small-text: 13px;
+    --xsmall-text: 14px;
+    --medium-text: 15px;
+    --large-text: 20px;
+    /*FONT-WEIGHT THEME*/
+    --bold-text: 700;
+    --light-text: 400;
+
+}
