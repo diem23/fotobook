@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotobook</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/89b8c94d61.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="position-relative" style="width:100vw; height:100vh">
+        <div class="header-bar row">
+            <div class="left-side col-9 col-sm-10 row align-items-center">
+                <div class="col-md-2 col-sm-3 col-7 d-flex justify-content-end">
+                    <h1>Fotobook</h1>
+                </div>
+                <div class="search-box col-md-5 col-sm-5 col-5">
+                    <i class="fa-solid fa-magnifying-glass d-sm-none"></i>
+                    <input type="text" class="search d-none d-sm-inline-block" placeholder="Search Photo / Album">
+                    <input type="text" class="search d-sm-none" >
+                </div>
+            </div>
+            <div class="right-side  col-3 col-sm-2 ">
+                <a href="#" class="h-100 d-flex flex-column justify-content-center align-items-center">
+                    <div class="login-box">Login</div>
+                </a>
+            </div>
+        </div>
+        <div class="container-content">
+            <div class="signup-form">
+                <h2>Fotobook Signup</h2>
+                <div class="signup-box">
+                    <form>
+                        <label for="InputFirstName">First name</label>
+                        <input type="email" class="form-control" id="InputFirstName" placeholder="First Name">
+                        <label for="InputLastName">Last name</label>
+                        <input type="email" class="form-control" id="InputLastName" placeholder="Last Name">
+                        <label for="InputPassword">New Password</label>
+                        <input type="password" class="form-control" id="InputPassword" placeholder="Password">
+                        <label for="InputPassworkConfirm">Password Confirmation</label>
+                        <input type="password" class="form-control" id="InputPassworkConfirm" placeholder="Password">
+                        <div class="w-100 d-flex justify-content-center">
+                            <button type="submit" class="btn btn-primary px-4 py-2 ">Signup</button>
+                        </div>
+                        
+                    </form>
+                    <a href="#">Forgot password?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
