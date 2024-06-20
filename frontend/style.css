@@ -8,8 +8,23 @@
     --search-box-height: 32px;
 
 }
+.gap-20{
+    gap: 20px;
+}
+.gap-10{
+    gap: 10px;
+}
+.gap-5{
+    gap: 5px;
+}
+.page-container{
+    background-color: var(--login-bgc);
+}
 .container-page{
     position: relative;
+}
+.h-90{
+    height: 90%;
 }
 .content-container{
     position: absolute;
@@ -18,6 +33,12 @@
     left: 0;
     bottom: 0;
 
+}
+.center-container{
+    padding: 15px 20px;
+    background-color: #fff;
+    height: 90%;
+    
 }
 header-bar-mini{
     display: none
@@ -105,6 +126,9 @@ header-bar-mini{
     font-size: var(--xsmall-text);
     font-weight: var(--bold-text);
     margin: 0;
+}
+.header-bar .right-side a{
+    text-decoration: none;
 }
 .header-bar .right-side .logout-box,.header-bar .right-side .login-box{
     color:white;

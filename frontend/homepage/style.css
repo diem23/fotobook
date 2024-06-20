@@ -1,15 +1,8 @@
 @import "../constant.css";
 @import url(../reset.css);
-.page-container{
-    background-color: var(--login-bgc);
-}
 
-.center-container{
-    padding: 15px 20px;
-    background-color: #fff;
-    height: 90%;
-    
-}
+
+
 .center-container .addNewPhoto-box{
     padding-bottom: 12px;
     border-bottom: #E0E0E0 solid 2px;
@@ -66,12 +59,8 @@
 #nav-list a:nth-child(2) li{
     color: var(--main-color);
 }
-.pagination-box {
-    position:absolute;
-    bottom: 20px;
-}
 
 .center-container .img-container{
-    overflow: hidden;
-    height: 57%;
+    overflow: auto;
+    height: 75%;
 }

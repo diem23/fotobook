@@ -1,0 +1,80 @@
+@import "../../constant.css";
+@import url(../../reset.css);
+#nav-list a:nth-child(1) li{
+    color: var(--main-color);
+}
+.center-container{
+    background-color: #fff;
+}
+.center-container .switch-mode{
+    border-radius: 3px;
+    border: var(--main-color) solid 1px;
+}
+.center-container .switch-mode a{
+    text-decoration: none;
+    font-size: var(--medium-text);
+    font-weight: var(--bold-text);
+}
+.center-container .switch-mode .photo-btn{
+    color: white;
+    background-color: var(--main-color);
+}
+.center-container .switch-mode .album-btn{
+    color: var(--main-color);
+    background-color: #fff;
+    border-radius: 3px;;
+    
+}
+.img-box{
+    background-image: url(../../asset/img/photo.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.item-box{
+    width: 100%;
+    
+    /* max-width: 466px; */
+    height: 255px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+    border-radius: 3px;
+}
+.user-info-box .avt-icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+}
+.user-info-box p{
+    color: var(--main-color);
+    font-size: var(--small-text);
+    font-weight: var(--bold-text);
+    margin:0;
+}
+.upper-box .title{
+    margin: 0;
+    font-size: var(--xsmall-text);
+    font-weight: var(--bold-text);
+}
+.upper-box .description{
+    margin:0;
+    font-size: var(--small-text);
+    font-weight: var(--light-text);
+    line-height: 1.18em;
+}
+.react-box .counting-likes{
+    margin: 0;
+    color: var(--main-color);
+    font-size: var(--tiny-text);
+    font-weight: var(--light-text);
+}
+.react-box .heart{
+    color: var(--main-color);
+    
+}
+.bottom-box .time-box{
+    font-size: var(--tiny-text);
+    font-weight: var(--light-text);
+    color: var(--border-color);
+}
