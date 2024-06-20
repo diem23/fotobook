@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotobook</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/89b8c94d61.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="position-relative page-container"  style="width:100vw; height:100vh">
+        <div class="header-bar-mini d-lg-none row">
+            <div class="left-side-mini col-9 ">
+                <h1>Fotobook</h1>
+                <div class="search-box">
+                    <input type="text" class="search" placeholder="Search Photo / Album">
+                </div>
+            </div>
+            <div class="right-side-mini col-2">
+                <div class="dropdown show-dropdown">
+                    <button class="btn btn-secondary show-dropdown " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">
+                        <div class="personal-box">
+                            <div class="avt-box"></div>
+                            <p>Minh Diem</p>
+                        </div>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <div class="logout-box">Logout</div>
+                    </a>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        <div class="header-bar d-none d-lg-flex row ml-0 mr-0">   
+            <div class="left-side col-md-6 col-sm-6 row align-items-center ml-1">
+                <div class="col-md-3 col-6 title-box">
+                    <h1>Fotobook</h1>
+                </div>
+                
+                <div class="search-box col-md-8 col-6">
+                    <input type="text" class="search" placeholder="Search Photo / Album">
+                </div>
+            </div>
+            <div class="right-side col-md-6 col-sm-6 row">
+                <a href="#" class="col-md-8">
+                    <div class="personal-box">
+                        <div class="avt-box"></div>
+                        <p>Minh Diem</p>
+                    </div>
+                </a>
+                <a href="../signin/signin.html" class="col-md-3">
+                    <div class="logout-box">Logout</div>
+                </a>
+            </div>
+        </div>
+        <div class="w-100 content-container">
+            <div class="row h-100">
+                <div class="col-2 d-flex flex-row justify-content-center mt-4">
+                    <ul class="d-inline-block " id="nav-list">
+                        <a href="#">
+                            <li class="d-block mb-2">Feeds</li>
+                        </a>
+                        <a href="../../homepage/signedHomepage.html">
+                            <li class="d-block mb-2">My Photos</li>
+                        </a>
+                        <a href="../../homepage/signedHomepage.html">
+                            <li class="d-block mb-2">My Albums</li>
+                        </a>
+                        
+                    </ul>
+                </div>
+                <div class="col-8 center-container d-flex flex-column align-items-center"> 
+                    
+                    <div class="switch-mode d-flex mt-4">
+                        <a href="../Photo/photo.html">
+                            <div class="photo-btn p-2">PHOTO</div>
+                        </a>
+                        <a href="#">
+                            <div class="album-btn p-2">ALBUM</div>
+                        </a>
+                    </div>
+                    <div class="w-100 d-flex flex-wrap gap-20 mt-4 h-100 mb-4 overflow-auto">
+                        
+                            <div class="row mx-0 item-box">
+                                <div class="col-7  img-box">
+                                    <div class="contain-rotate-img">
+                                        <img src="../../asset/img/photo.jpeg" alt="">
+                                        <img src="../../asset/img/photo.jpeg" alt="">
+                                        <img src="../../asset/img/photo.jpeg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-5 h-100 p-2 d-flex flex-column justify-content-between">
+                                    <div class="upper-box d-flex flex-column gap-10 ">
+                                        <div class="user-info-box d-flex justify-content-start align-items-center gap-10">
+                                            <div class="avt-icon">  </div>
+                                            <p class="user-name">Hieu Nguyen</p>
+                                        </div>
+                                        <p class="title"> Nam tempor posuere faucibus</p>
+                                        <p class="description">Aliquam dictum nec massa ac consequat. Etiam dignissim tincidunt tellus sed vestibulum. Sed vitae vestibulum purus. Curabitur malesuada libero in nibh pretium, sed malesuada nisi feugiat.</p>
+                                        
+                                    </div>
+                                    <div class="bottom-box d-flex flex-row justify-content-between">
+                                        <div class="react-box d-flex flex-row align-items-center gap-2">
+                                            <i class="fa-solid fa-heart fa-xs heart"></i>
+                                            <p class="counting-likes">123</p>
+                                        </div>
+                                        <div class="time-box">
+                                            4:56 pm 01/04/2018
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        
+                            <div class="row mx-0 item-box ">
+                                <div class="col-7  img-box">
+                                    <div class="contain-rotate-img">
+                                        <img src="../../asset/img/anime1" alt="">
+                                        <img src="../../asset/img/anime1" alt="">
+                                        <img src="../../asset/img/anime1" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-5 h-100 p-2 d-flex flex-column justify-content-between">
+                                    <div class="upper-box d-flex flex-column gap-10 ">
+                                        <div class="user-info-box d-flex justify-content-start align-items-center gap-10">
+                                            <div class="avt-icon">  </div>
+                                            <p class="user-name">Hieu Nguyen</p>
+                                        </div>
+                                        <p class="title"> Nam tempor posuere faucibus</p>
+                                        <p class="description">Aliquam dictum nec massa ac consequat. Etiam dignissim tincidunt tellus sed vestibulum. Sed vitae vestibulum purus. Curabitur malesuada libero in nibh pretium, sed malesuada nisi feugiat.</p>
+                                        
+                                    </div>
+                                    <div class="bottom-box d-flex flex-row justify-content-between">
+                                        <div class="react-box d-flex flex-row align-items-center gap-2">
+                                            <i class="fa-solid fa-heart fa-xs heart"></i>
+                                            <p class="counting-likes">123</p>
+                                        </div>
+                                        <div class="time-box">
+                                            4:56 pm 01/04/2018
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        
+                            <div class="row mx-0 item-box ">
+                                <div class="col-6 img-box">
+                                    <div class="contain-rotate-img">
+                                        <img src="../../asset/img/anime.jpg" alt="">
+                                        <img src="../../asset/img/anime.jpg" alt="">
+                                        <img src="../../asset/img/anime.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-6 h-100 p-2 d-flex flex-column justify-content-between">
+                                    <div class="upper-box d-flex flex-column gap-10 ">
+                                        <div class="user-info-box d-flex justify-content-start align-items-center gap-10">
+                                            <div class="avt-icon">  </div>
+                                            <p class="user-name">Hieu Nguyen</p>
+                                        </div>
+                                        <p class="title"> Nam tempor posuere faucibus</p>
+                                        <p class="description">Aliquam dictum nec massa ac consequat. Etiam dignissim tincidunt tellus sed vestibulum. Sed vitae vestibulum purus. Curabitur malesuada libero in nibh pretium, sed malesuada nisi feugiat.</p>
+                                        
+                                    </div>
+                                    <div class="bottom-box d-flex flex-row justify-content-between">
+                                        <div class="react-box d-flex flex-row align-items-center gap-2">
+                                            <i class="fa-solid fa-heart fa-xs heart"></i>
+                                            <p class="counting-likes">123</p>
+                                        </div>
+                                        <div class="time-box">
+                                            4:56 pm 01/04/2018
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+
+                    </div>
+                    <div class="pagination-box w-100 d-flex justify-content-center mt-4">
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination " >
+                              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                            </ul>
+                          </nav>
+                    </div>
+                </div>
+                <div class="col-2"></div>
+            </div> 
+        </div>
+    </div>
+    
+    
+</body>
+</html>
